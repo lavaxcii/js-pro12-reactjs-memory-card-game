@@ -1,0 +1,17 @@
+.cardContainer {
+  border: none;
+  display: grid;
+  width: 90vw;
+  justify-content: start;
+  align-items: stretch;
+  align-self: center;
+  align-content: stretch;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px 2px;
+  border: dashed 5px blueviolet;
+  padding: 1rem;
+}
+
+p {
+
+}
