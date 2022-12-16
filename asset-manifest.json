@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/js-pro12-reactjs-memory-card-game/static/css/main.413cd291.css",
-    "main.js": "/js-pro12-reactjs-memory-card-game/static/js/main.1e7573b9.js",
+    "main.css": "/js-pro12-reactjs-memory-card-game/static/css/main.5da929fe.css",
+    "main.js": "/js-pro12-reactjs-memory-card-game/static/js/main.723bff68.js",
     "index.html": "/js-pro12-reactjs-memory-card-game/index.html",
-    "main.413cd291.css.map": "/js-pro12-reactjs-memory-card-game/static/css/main.413cd291.css.map",
-    "main.1e7573b9.js.map": "/js-pro12-reactjs-memory-card-game/static/js/main.1e7573b9.js.map"
+    "main.5da929fe.css.map": "/js-pro12-reactjs-memory-card-game/static/css/main.5da929fe.css.map",
+    "main.723bff68.js.map": "/js-pro12-reactjs-memory-card-game/static/js/main.723bff68.js.map"
   },
   "entrypoints": [
-    "static/css/main.413cd291.css",
-    "static/js/main.1e7573b9.js"
+    "static/css/main.5da929fe.css",
+    "static/js/main.723bff68.js"
   ]
 }
