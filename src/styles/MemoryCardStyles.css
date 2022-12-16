@@ -10,8 +10,12 @@
   gap: 2px 2px;
   border: dashed 5px blueviolet;
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
-p {
-
+.cards {
+  justify-content: start;
+  align-self: center;
+  border: dashed 5px rgb(156, 55, 18);
+  padding: 1rem;
 }

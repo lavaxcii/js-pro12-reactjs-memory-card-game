@@ -1,0 +1,6 @@
+.scoreContainer {
+  width: 90vw;
+  border: dashed 5px blueviolet;
+  padding: 1rem;
+  margin: 0.5rem;
+}
