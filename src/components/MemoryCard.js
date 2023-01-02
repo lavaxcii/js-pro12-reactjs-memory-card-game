@@ -22,25 +22,21 @@ function MemoryCard(props) {
   const [cardClicked, setCardClicked] = useState(false);
 
   const changeCardClicked = () => {
-    if (cardClicked === false) {
-      setCardClicked(true);
-      props.updateNumberOfCardsClicked()
-    }
     console.log('NR OF CARDS CLICKED ' + props.numberOfCardsClicked)
     console.log('CARD CLICKED ' + (props.id + 1))
     console.log('CARD STATUS ' + cardClicked)
-  };
-  let gallery;
-  for (let i = 0; i <= 5; i++) {
-    if (props.id === i) {
-      gallery = props.gallery[i]
+    if (cardClicked === false) {
+      console.log('ITs trully clicked now!')
+      setCardClicked(true);
+      props.updateNumberOfCardsClicked(props.id)
     }
-  }
+  };
+  
 
   return (
-    <div className="cards" onClick={changeCardClicked}>
+    <div onClick={() => changeCardClicked()}>
       {/* <img src="" alt="" /> */}
-      {gallery}
+      {props.gallery}
     </div>
     
   )
