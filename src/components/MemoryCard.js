@@ -20,17 +20,13 @@ function MemoryCard(props) {
   //   cards.push(card);
   // }
   const [cardClicked, setCardClicked] = useState(false);
-
   const changeCardClicked = () => {
-    console.log('NR OF CARDS CLICKED ' + props.numberOfCardsClicked)
     console.log('CARD CLICKED ' + (props.id + 1))
     console.log('CARD STATUS ' + cardClicked)
     if (cardClicked === false) {
       console.log('ITs trully clicked now!')
       setCardClicked(true);
       document.querySelector(`.memoryCardItem${props.id}`).classList.add('text-red-400','border-solid','border-4','border-red-500');
-      console.log('card id is: ' + props.id)
-      props.updateNumberOfCardsClicked(props.id)
     } 
     // else if (cardClicked === null) {
     //   props.resetGame();
@@ -39,9 +35,9 @@ function MemoryCard(props) {
   
 
   return (
-    <div className={props.text} onClick={() => changeCardClicked()}>
+    <div className={props.class} onClick={() => changeCardClicked()}>
       {/* <img src="" alt="" /> */}
-      {props.gallery}
+      {props.text}
     </div>
     
   )
