@@ -28,13 +28,18 @@ function MemoryCard(props) {
     if (cardClicked === false) {
       console.log('ITs trully clicked now!')
       setCardClicked(true);
+      document.querySelector(`.memoryCardItem${props.id}`).classList.add('text-red-400','border-solid','border-4','border-red-500');
+      console.log('card id is: ' + props.id)
       props.updateNumberOfCardsClicked(props.id)
-    }
+    } 
+    // else if (cardClicked === null) {
+    //   props.resetGame();
+    // }
   };
   
 
   return (
-    <div onClick={() => changeCardClicked()}>
+    <div className={props.text} onClick={() => changeCardClicked()}>
       {/* <img src="" alt="" /> */}
       {props.gallery}
     </div>
