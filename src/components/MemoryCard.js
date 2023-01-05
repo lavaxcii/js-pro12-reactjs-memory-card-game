@@ -19,25 +19,40 @@ function MemoryCard(props) {
   //   let card = <p key={keyNr}>I'm beautifull and strong! {i}</p>;
   //   cards.push(card);
   // }
-  const [cardClicked, setCardClicked] = useState(false);
-  const changeCardClicked = () => {
-    console.log('CARD CLICKED ' + (props.id + 1))
-    console.log('CARD STATUS ' + cardClicked)
-    if (cardClicked === false) {
-      console.log('ITs trully clicked now!')
-      setCardClicked(true);
-      document.querySelector(`.memoryCardItem${props.id}`).classList.add('text-red-400','border-solid','border-4','border-red-500');
-    } 
-    // else if (cardClicked === null) {
-    //   props.resetGame();
-    // }
+  // const { updateClickedStatusParent } = props;
+
+  const [clicked, setClicked] = useState(props.clickedStatus);
+  const updateClickedStatus = (e) => {
+    if (clicked === false) {
+      document.querySelector(`.${e.target.classList[0]}`).classList.add('text-red-400','border-solid','border-4','border-red-500');
+      props.updateScore(props.id);
+    } else {
+      props.updateBestScore();
+      props.updateBestScoreStatus();
+      props.shuffleCards(props.id);
+      return;
+    };
+    setClicked(true);
+    props.shuffleCards(props.id);
   };
+
+
+  useEffect(() => {
+    setClicked(false);
+  }, [props.bestScoreStatus])
+
+  useEffect(() => {
+    console.log('CARD CLICKED ' + (props.id + 1))
+    console.log('CARD STATUS ' + clicked)
+  })
   
 
   return (
-    <div className={props.class} onClick={() => changeCardClicked()}>
+    <div className={props.class} onClick={(e) => {
+      updateClickedStatus(e);
+      }}>
       {/* <img src="" alt="" /> */}
-      {props.text}
+      {props.gallery}
     </div>
     
   )
