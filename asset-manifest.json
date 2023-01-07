@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "/js-pro12-reactjs-memory-card-game/static/css/main.a3ef7ff0.css",
-    "main.js": "/js-pro12-reactjs-memory-card-game/static/js/main.92381f15.js",
+    "main.css": "/js-pro12-reactjs-memory-card-game/static/css/main.8be3a3b3.css",
+    "main.js": "/js-pro12-reactjs-memory-card-game/static/js/main.731c99b1.js",
+    "static/media/goku3.jpg": "/js-pro12-reactjs-memory-card-game/static/media/goku3.d3ce1187babfe08f3051.jpg",
+    "static/media/goku2.jpg": "/js-pro12-reactjs-memory-card-game/static/media/goku2.9862739e3e0758f0a35d.jpg",
+    "static/media/goku1.jpg": "/js-pro12-reactjs-memory-card-game/static/media/goku1.b52a6b5ac216b1557a19.jpg",
+    "static/media/goku4.jpg": "/js-pro12-reactjs-memory-card-game/static/media/goku4.65f88f183aaa3dcfc319.jpg",
+    "static/media/krilin.jpg": "/js-pro12-reactjs-memory-card-game/static/media/krilin.9d3e0fd1757902062de8.jpg",
+    "static/media/krme.jpg": "/js-pro12-reactjs-memory-card-game/static/media/krme.3ca2c219e691d2d68af8.jpg",
+    "static/media/malibijeli.jpg": "/js-pro12-reactjs-memory-card-game/static/media/malibijeli.cf74e897b23689e2a363.jpg",
+    "static/media/bulma.jpg": "/js-pro12-reactjs-memory-card-game/static/media/bulma.17b63f2605f07c94deb0.jpg",
+    "static/media/pikolo.jpg": "/js-pro12-reactjs-memory-card-game/static/media/pikolo.77141564e3587880bca6.jpg",
     "index.html": "/js-pro12-reactjs-memory-card-game/index.html",
-    "main.a3ef7ff0.css.map": "/js-pro12-reactjs-memory-card-game/static/css/main.a3ef7ff0.css.map",
-    "main.92381f15.js.map": "/js-pro12-reactjs-memory-card-game/static/js/main.92381f15.js.map"
+    "main.8be3a3b3.css.map": "/js-pro12-reactjs-memory-card-game/static/css/main.8be3a3b3.css.map",
+    "main.731c99b1.js.map": "/js-pro12-reactjs-memory-card-game/static/js/main.731c99b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3ef7ff0.css",
-    "static/js/main.92381f15.js"
+    "static/css/main.8be3a3b3.css",
+    "static/js/main.731c99b1.js"
   ]
 }
