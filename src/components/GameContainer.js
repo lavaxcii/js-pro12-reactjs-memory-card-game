@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import MemoryCard from "./MemoryCard";
 import Score from "./Score";
 
 function GameContainer() {
   const [score, setScore] = useState(0)
-  const updateScore = (cardId) => {
+  const updateScore = () => {
     setScore(prev => prev + 1);
   };
   const [bestScore, setBestScore] = useState(0)
@@ -21,19 +21,12 @@ function GameContainer() {
   const [bestScoreStatus, setBestScoreStatus] = useState(0)
   const updateBestScoreStatus = () => {
     setBestScoreStatus(prev => prev + 1);
-    // setBestScoreStatus(false);
     setScore(0);
     for (let i = 0; i < 9; i++) {
       document.querySelector(`.memoryCardItem${i}`).classList.remove('text-red-400','border-solid','border-4','border-red-500');
     }
   }
 
-  // const [resetClicked, setResetClicked] = useState(false);
-  // const resetClickedStatus = () => {
-
-  // }
-
-  // const [cards, setCards] = useState()
   let cardsData = [{
         key: 0,
         class: `memoryCardItem0`,
