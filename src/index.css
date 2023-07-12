@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .headerStyle {
+    @apply lg:text-4xl p-1 text-2xl;
+  }
+  .navLinkStyle {
+    @apply text-white hover:text-sky-200 border-solid rounded-full p-2 lg:p-2 text-sm lg:text-lg;
+  }
+  .navLinkStyle.active {
+    @apply text-sky-300 hover:text-sky-200 border-solid border-2 border-sky-600 rounded-full p-2;
+  }
+  .navLinkStyle.game {
+    @apply bg-slate-300 text-black hover:text-gray-600 hover:border-sky-400 border-solid border-2 rounded-full p-2;
+  }
+  .navLinkStyle.game.active {
+    @apply bg-slate-300 text-black hover:text-gray-600 border-sky-400 border-solid border-2 rounded-full p-2;
+  }
+  
+  .paragraphStyle {
+    @apply text-lg p-1 text-black;
+  }
+
+} ;
