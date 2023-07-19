@@ -73,6 +73,7 @@ function App() {
           )
         })}
       </m.div>
+      <p className='text-white'>Best viewed at 1200x800 resolution.</p>
     </div>
   );
 }
