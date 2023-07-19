@@ -59,8 +59,8 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col items-center bg-gradient-to-r from-blue-400 to-blue-800">
       <div className="text-2xl text-white w-1/4 flex flex-col content-start items-start justify-start text-center' p-5 mt-10 mb-10 bg-gradient-to-r from-green-600 to-green-800 border-slate-200 border-solid border-4 rounded-full">
-        <div className='w-full flex flex-row content-start items-start justify-start'><p className='w-full text-start'>CURRENT SCORE: </p><p className='w-10 text-center bg-gradient-to-r from-slate-700 to-black border-slate-400 border-solid border-2 rounded-full'>{currentScore}</p></div>
-        <div className='w-full flex flex-row content-start items-start justify-start'><p className='w-full text-start mt-2'>BEST SCORE: </p><p className='w-10 text-center bg-gradient-to-r from-slate-700 to-black border-slate-400 border-solid border-2 rounded-full mt-2'>{bestScore}</p></div>
+        <div className='w-full flex flex-row content-start items-start justify-start'><p className='w-full text-start'>CURRENT SCORE: </p><p className='w-10 text-center bg-gradient-to-r from-slate-700 to-black border-slate-500 border-solid border-2 rounded-full'>{currentScore}</p></div>
+        <div className='w-full flex flex-row content-start items-start justify-start'><p className='w-full text-start mt-2'>BEST SCORE: </p><p className='w-10 text-center bg-gradient-to-r from-slate-700 to-black border-slate-500 border-solid border-2 rounded-full mt-2'>{bestScore}</p></div>
         
       </div>
       <m.div key={cardsDataIndex} initial={{ opacity: 0.75 }} animate={{ opacity: 1 }} transition={{ duration: 0.125, ease: "easeInOut" }} className="m-2 pb-20 grid gap-4 grid-cols-3 grid-rows-3 items-center">
